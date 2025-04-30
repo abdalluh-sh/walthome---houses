@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Walthome - home</title>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Googel font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar position-fixed navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="images/logo.png" alt="" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav m-auto mt-3 mt-md-0 mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#rent">rent</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">sell</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">buy</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">about</a>
+            </li>
+          </ul>
+          <div class="buttons d-flex" role="buttons">
+            <button class="btn first-btn me-4 text-capitalize">login</button>
+            <button class="btn btn-primary text-capitalize rounded-pill">
+              get start
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- PAGE -->
+    <div class="page pt-5 pb-5">
+      <div class="container">
+        <div class="text-box">
+          <h1 class="fw-bold lh-sm">Find a place where you can be yourself.</h1>
+          <p>
+            If you're looking for a place where you can be yourself, don't give
+            up. Keep searching until you find a place that feels like home.
+          </p>
+          <form class="rounded d-flex">
+            <div class="form-divide position-relative">
+              <label for="want">want to </label><br />
+              <select name="want to" id="want">
+                <option value="">Buy</option>
+                <option value="">Sell</option>
+                <option value="">Rent</option>
+              </select>
+              <i class="fa-solid fa-hand-holding-dollar"></i>
+            </div>
+            <div class="form-divide position-relative">
+              <label for="Property">Property type </label><br />
+              <select name="want to" id="Property">
+                <option value="">Houses</option>
+                <option value="">Apartments</option>
+                <option value="">Villa</option>
+                <option value="">Townhome</option>
+                <option value="">Bungalow</option>
+                <option value="">Loft</option>
+              </select>
+              <i class="fa-solid fa-house"></i>
+            </div>
+            <div class="form-divide position-relative">
+              <label for="">Location </label><br /><input
+                type="text"
+                placeholder="City"
+              />
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <button class="btn btn-primary">
+              <i class="fa-solid fa-magnifying-glass"></i> Search
+            </button>
+          </form>
+        </div>
+        <div class="image">
+          <img class="d-none d-lg-block" src="images/hero.png" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <button class="up-scrol"><i class="fa-solid fa-arrow-up"></i></button>
+
+    <!-- Start Rent -->
+    <div class="rent my-5 py-5" id="rent">
+      <div class="container">
+        <div
+          class="mb-5 text-box d-flex flex-column flex-md-row align-items-center justify-content-between"
+        >
+          <div class="text text-center text-md-start">
+            <h2>Best home in your city</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur. In quisque scelerisque
+              eget id facilisis. Aliquam in libero egestas at.
+            </p>
+          </div>
+          <button type="button " class="btn btn-outline-primary rounded-pill">
+            View All Stories
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-arrow-up-right"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0z"
+              />
+            </svg>
+          </button>
+        </div>
+
+        <!-- row -->
+        <div class="products-row row gx-3 gy-3">
+          <!-- card 1 -->
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="card rounded-4">
+              <div class="box overflow-hidden rounded-4">
+                <img
+                  src="images/property-1.jpg"
+                  class="card-img-top rounded-top-4"
+                  alt="..."
+                />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">$710.68</h5>
+                <p class="title fw-bold mb-1">COVA Home Realty</p>
+                <p class="card-text">
+                  1901 Thornridge Cir. Shiloh, Hawaii 81063
+                </p>
+                <span class="services d-flex align-items-center justify-content-between">
+                  <span ><i class="fa-solid fa-bed"></i> 3 Bed</span>
+                  <span ><i class="fa-solid fa-bath"></i> 2 Bath</span>
+                  <span ><i class="fa-solid fa-ruler-horizontal"></i> 1430sqft</span>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- card 2 -->
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="card rounded-4">
+              <div class="box overflow-hidden rounded-4">
+                <img
+                  src="images/property-2.jpg"
+                  class="card-img-top rounded-top-4"
+                  alt="..."
+                />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">$630.44</h5>
+                <p class="title fw-bold mb-1">Exit Realty</p>
+                <p class="card-text">
+                  2972 Westheimer Rd. Santa Ana, Illinois 85486
+                </p>
+                <span class="services d-flex align-items-center justify-content-between"
+                  ><span><i class="fa-solid fa-bed"></i> 5 Bed</span
+                  ><span><i class="fa-solid fa-bath"></i> 4 Bath</span
+                  ><span
+                    ><i class="fa-solid fa-ruler-horizontal"></i> 1630
+                    sqft</span
+                  ></span
+                >
+              </div>
+            </div>
+          </div>
+          <!-- card 3 -->
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="card rounded-4">
+              <div class="box overflow-hidden rounded-4">
+                <img
+                  src="images/property-3.jpg"
+                  class="card-img-top rounded-top-4"
+                  alt="..."
+                />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">$475.22</h5>
+                <p class="title fw-bold mb-1">The Real Estate Group</p>
+                <p class="card-text">
+                  2118 Thornridge Cir. Syracuse, Connecticut 35624
+                </p>
+                <span class="services d-flex align-items-center justify-content-between"
+                  ><span><i class="fa-solid fa-bed"></i> 8 Bed</span
+                  ><span><i class="fa-solid fa-bath"></i> 5 Bath</span
+                  ><span
+                    ><i class="fa-solid fa-ruler-horizontal"></i> 1240
+                    sqft</span
+                  ></span
+                >
+              </div>
+            </div>
+          </div>
+          <!-- card 4 -->
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="card rounded-4">
+              <div class="box overflow-hidden rounded-4">
+                <img
+                  src="images/property-4.jpg"
+                  class="card-img-top rounded-top-4"
+                  alt="..."
+                />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">$576.28</h5>
+                <p class="title fw-bold mb-1">757 Realty</p>
+                <p class="card-text">
+                  4140 Parker Rd. Allentown, New Mexico 31134
+                </p>
+                <span class="services d-flex align-items-center justify-content-between"
+                  ><span><i class="fa-solid fa-bed"></i> 6 Bed</span
+                  ><span><i class="fa-solid fa-bath"></i> 6 Bath</span
+                  ><span
+                    ><i class="fa-solid fa-ruler-horizontal"></i> 1260
+                    sqft</span
+                  ></span
+                >
+              </div>
+            </div>
+          </div>
+          <!-- card 5 -->
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="card rounded-4">
+              <div class="box overflow-hidden rounded-4">
+                <img
+                  src="images/property-5.jpg"
+                  class="card-img-top rounded-top-4"
+                  alt="..."
+                />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">$473.85</h5>
+                <p class="title fw-bold mb-1">Beach Pros Realty Inc</p>
+                <p class="card-text">
+                  2715 Ash Dr. San Jose, South Dakota 83475
+                </p>
+                <span class="services d-flex align-items-center justify-content-between"
+                  ><span><i class="fa-solid fa-bed"></i> 10 Bed</span
+                  ><span><i class="fa-solid fa-bath"></i> 8 Bath</span
+                  ><span
+                    ><i class="fa-solid fa-ruler-horizontal"></i> 2350
+                    sqft</span
+                  ></span
+                >
+              </div>
+            </div>
+          </div>
+          <!-- card 6 -->
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="card rounded-4">
+              <div class="box overflow-hidden rounded-4">
+                <img
+                  src="images/property-6.jpg"
+                  class="card-img-top rounded-top-4"
+                  alt="..."
+                />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">$105.55</h5>
+                <p class="title fw-bold mb-1">
+                  All Pros Real Estate
+                </p>
+                <p class="card-text">
+                  3517 W. Gray St. Utica, Pennsylvania 57867
+                </p>
+                <span class="services d-flex align-items-center justify-content-between"
+                  ><span><i class="fa-solid fa-bed"></i> 8 Bed</span
+                  ><span><i class="fa-solid fa-bath"></i> 8 Bath</span
+                  ><span
+                    ><i class="fa-solid fa-ruler-horizontal"></i> 1950
+                    sqft</span
+                  ></span
+                >
+              </div>
+            </div>
+          </div>
+          <!-- card 7 -->
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="card rounded-4">
+              <div class="box overflow-hidden rounded-4">
+                <img
+                  src="images/property-7.jpg"
+                  class="card-img-top rounded-top-4"
+                  alt="..."
+                />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">$739.65</h5>
+                <p class="title fw-bold mb-1">All Pros Real Estate</p>
+                <p class="card-text">8502 Preston Rd. Inglewood, Maine 98380</p>
+                <span class="services d-flex align-items-center justify-content-between"
+                  ><span><i class="fa-solid fa-bed"></i> 4 Bed</span
+                  ><span><i class="fa-solid fa-bath"></i> 4 Bath</span
+                  ><span
+                    ><i class="fa-solid fa-ruler-horizontal"></i> 1580
+                    sqft</span
+                  ></span
+                >
+              </div>
+            </div>
+          </div>
+          <!-- card 7 -->
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="card rounded-4">
+              <div class="box overflow-hidden rounded-4">
+                <img
+                  src="images/property-8.jpg"
+                  class="card-img-top rounded-top-4"
+                  alt="..."
+                />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">$948.55</h5>
+                <p class="title fw-bold mb-1">FIT Realty</p>
+                <p class="card-text">
+                  4517 Washington Ave. Manchester, Kentucky 39495
+                </p>
+                <span class="services d-flex align-items-center justify-content-between"
+                  ><span><i class="fa-solid fa-bed"></i> 3 Bed</span
+                  ><span><i class="fa-solid fa-bath"></i> 2 Bath</span
+                  ><span
+                    ><i class="fa-solid fa-ruler-horizontal"></i> 1120
+                    sqft</span
+                  ></span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- End Rent -->
+    <!-- Start FEATURE -->
+    <div class="feature pt-5 pb-5" id="feature">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-6">
+            <img
+              class="w-100 rounded-5"
+              src="images/feature-banner-1.jpg"
+              alt=""
+            />
+          </div>
+          <div class="col-12 col-lg-6 p-4 ps-lg-5">
+            <div class="content">
+              <h2 class="mb-3">We Specialize In Quality Home Renovations</h2>
+              <p class="mb-3">
+                Looking to renovate your home to reflect your style and
+                personality? Look no further than our team of experts who
+                specialize in quality home renovations to transform your space
+                into a dream home you’ll love. From design to execution.
+              </p>
+              <div class="home-option row row-gap-2">
+                <span class="col-6"
+                  ><i class="fa-regular fa-circle-check me-1"></i> Smart
+                  Home</span
+                >
+                <span class="col-6"
+                  ><i class="fa-regular fa-circle-check me-1"></i> Beautiful
+                  Scene Around</span
+                >
+                <span class="col-6"
+                  ><i class="fa-regular fa-circle-check me-1"></i> Exceptional
+                  lifestyle</span
+                >
+                <span class="col-6"
+                  ><i class="fa-regular fa-circle-check me-1"></i> Complete 24/7
+                  Security</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="feature pt-5 pb-5" id="feature">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-6 p-4">
+            <div class="content">
+              <h2 class="mb-3">We Are Experts In Historic Home Renovations</h2>
+              <p class="mb-3">
+                Looking to renovate your home to reflect your style and
+                personality? Look no further than our team of experts who
+                specialize in quality home renovations to transform your space
+                into a dream home you’ll love. From design to execution.
+              </p>
+              <div class="home-option row row-gap-2">
+                <span class="col-6"
+                  ><i class="fa-regular fa-circle-check me-1"></i> Smart
+                  Home</span
+                >
+                <span class="col-6"
+                  ><i class="fa-regular fa-circle-check me-1"></i> Beautiful
+                  Scene Around</span
+                >
+                <span class="col-6"
+                  ><i class="fa-regular fa-circle-check me-1"></i> Exceptional
+                  lifestyle</span
+                >
+                <span class="col-6"
+                  ><i class="fa-regular fa-circle-check me-1"></i> Complete 24/7
+                  Security</span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6">
+            <img
+              class="w-100 rounded-5"
+              src="images/feature-banner-2.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End FEATURE -->
+    <!-- Start VIDEO -->
+    <div class="video pt-5 pb-5" id="video">
+      <div class="container position-relative p-0">
+        <img
+          class="video-img w-100 rounded-5 position-relative"
+          src="images/video-card.jpg"
+          alt=""
+        />
+        <i class="fa-solid fa-play play"></i>
+      </div>
+    </div>
+    <!-- End VIDEO -->
+    <!-- Strat Story -->
+    <div class="story pt-5 pb-5" id="story">
+      <div class="container">
+        <div
+          class="text-box d-flex flex-column flex-md-row align-items-center justify-content-between"
+        >
+          <div class="text">
+            <p>Our Customers</p>
+            <h2>We Help 1000+ Family Find Their True Home</h2>
+            <div class="Picture-people mt-3">
+              <div><img src="images/avatar-1.jpg" alt="" /></div>
+              <div><img src="images/avatar-2.jpg" alt="" /></div>
+              <div><img src="images/avatar-3.jpg" alt="" /></div>
+              <div class="more-image-people position-relative p-0">
+                <img src="images/avatar-4.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+          <button type="button " class="btn btn-outline-primary rounded-pill">
+            Explore more
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-arrow-up-right"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0z"
+              />
+            </svg>
+          </button>
+        </div>
+        <div class="story-images pt-5 row">
+          <div class="col-md-4 mb-3 position-relative">
+            <img class="w-100 rounded-4" src="images/story-1.jpg" alt="" />
+            <div class="evaluation position-absolute">
+              <p class="name m-0">Chris Traeger</p>
+              <p class="stars m-0">
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star star"></i>
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3 position-relative">
+            <img class="w-100 rounded-4" src="images/story-2.jpg" alt="" />
+            <div class="evaluation position-absolute">
+              <p class="name m-0">Chris Traeger</p>
+              <p class="stars m-0">
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star star"></i>
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3 position-relative">
+            <img class="w-100 rounded-4" src="images/story-3.jpg" alt="" />
+            <div class="evaluation position-absolute">
+              <p class="name m-0">Chris Traeger</p>
+              <p class="stars m-0">
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star star"></i>
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3 position-relative">
+            <img class="w-100 rounded-4" src="images/story-4.jpg" alt="" />
+            <div class="evaluation position-absolute">
+              <p class="name m-0">Chris Traeger</p>
+              <p class="stars m-0">
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star star"></i>
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3 position-relative">
+            <img class="w-100 rounded-4" src="images/story-5.jpg" alt="" />
+            <div class="evaluation position-absolute">
+              <p class="name m-0">Chris Traeger</p>
+              <p class="stars m-0">
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star star"></i>
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3 position-relative">
+            <img class="w-100 rounded-4" src="images/story-6.jpg" alt="" />
+            <div class="evaluation position-absolute">
+              <p class="name m-0">Chris Traeger</p>
+              <p class="stars m-0">
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star star"></i>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Story -->
+    <div class="footer pt-5">
+      <div class="container pb-5">
+        <div class="row justify-content-between row-gap-3">
+          <div class=" col-12 col-md-6 col-lg-3 mb-5 m-lg-0">
+            <div
+              class="image d-flex align-items-center justify-content-center h-100 w-100"
+            >
+              <img class="w-100" src="images/logo.png" alt="" />
+            </div>
+          </div>
+          <div class=" col-12 col-md-6 col-lg-2">
+            <p class="titles">Quick link</p>
+            <ul class="p-0">
+              <li><a href="">Home</a></li>
+              <li><a href="">Buy</a></li>
+              <li><a href="">Sell</a></li>
+              <li><a href="">Rent</a></li>
+            </ul>
+          </div>
+          <div class=" col-12 col-md-6 col-lg-2">
+            <p class="titles">Support</p>
+            <ul class="p-0">
+              <li><a href="">About us</a></li>
+              <li><a href="">Contact us</a></li>
+              <li><a href="">Privacy Policy</a></li>
+              <li><a href="">Terms & Conditions</a></li>
+            </ul>
+          </div>
+          <div class=" col-12 col-md-6 col-lg-3">
+            <p class="titles">Get in touch</p>
+            <a href="" class="d-block mb-3">hello@wealthome.com</a>
+            <p>4140 Parker Rd. Allentown, New Mexico 31134</p>
+          </div>
+        </div>
+      </div>
+      <p class="copyright m-0 p-2 text-center">Copyright 2024 codewithsadee</p>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/mane.js"></script>
+  </body>
+</html>
